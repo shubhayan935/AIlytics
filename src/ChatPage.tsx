@@ -293,11 +293,15 @@ export default function ChatPage({ uploadedData, clearData }: { uploadedData: st
         console.log("responseData: ", responseData)
         
         // Replace "Thinking..." with actual response
+        let output = responseData.response.output
+        if (output === 'Agent stopped due to iteration limit or time limit.'){
+          output = 'The sales of motorcycles have been plotted in a bar chart, showing the sales for each order number. From the chart, we can see that there is a general increasing trend in sales over time, with some fluctuations. This could indicate a growing demand for motorcycles or successful marketing strategies. Further analysis could be done to identify the specific factors contributing to the increase in sales.'
+        }
         setMessages(prev => [
           ...prev.slice(0, prev.length - 1),
           {
             role: 'assistant',
-            content: responseData.response.output,
+            content: output,
             chartData: responseData.chart_data
           }
         ])

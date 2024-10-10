@@ -264,7 +264,7 @@ export default function DatabaseConnection({ onDataUpload }: { onDataUpload: (da
         <Heading>Connect Your Data</Heading>
         <CardHeader>
           <CardTitle>Select Data Source</CardTitle>
-          <CardDescription>Choose how you want to connect your data to the AI Data Scientist app.</CardDescription>
+          <CardDescription>Choose how you want to connect your data to the AI Data Scientist.</CardDescription>
         </CardHeader>
 
         <TabsContainer>

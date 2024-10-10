@@ -24,7 +24,7 @@ const ResponseText = styled.p`
 
 const ChartContainer = styled.div`
   height: 400px;
-  width: 1000px;
+  width: 100%;
   margin-top: 16px;
 `;
 
