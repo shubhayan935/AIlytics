@@ -16,7 +16,7 @@ const ResponseContainer = styled.div`
   width: 100%;
 `;
 
-const ResponseText = styled.p`
+const ResponseText = styled.p` 
   font-size: 1rem;
   color: #111827;
   margin-bottom: 16px;
